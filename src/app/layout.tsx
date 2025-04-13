@@ -1,4 +1,11 @@
 import "./globals.css";
+import type { Metadata } from "next";
+import { AuthProvider } from "@/lib/contexts/AuthContext";
+
+export const metadata: Metadata = {
+  title: "AI Image Generator",
+  description: "Generate and save AI images with different models",
+};
 
 export default function RootLayout({
   children,
@@ -7,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
     </html>
   );
 }
