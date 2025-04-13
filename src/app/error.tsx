@@ -22,7 +22,7 @@ export default function Error({
             Something went wrong!
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            We're sorry, but there was an error loading this page.
+            We&apos;re sorry, but there was an error loading this page.
           </p>
         </div>
 

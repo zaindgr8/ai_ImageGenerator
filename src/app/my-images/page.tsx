@@ -61,7 +61,7 @@ export default function MyImages() {
 
             {!loading && images.length === 0 && (
               <div className="text-center my-12 text-gray-500">
-                <p>You haven't generated any images yet.</p>
+                <p>You haven&apos;t generated any images yet.</p>
               </div>
             )}
 
